@@ -1,0 +1,87 @@
+.hero{
+    height: 100vh;
+    
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+#Home{
+    background-image: url("../imgs/home/christian-nUKEHdmibLg-unsplash.jpg");
+}
+#ServicesBlock1 .card {
+  min-height: 530px; 
+}
+
+#Servicos{
+    background-image: url("../imgs/services/matthew-henry-VviFtDJakYk-unsplash.jpg");
+}
+
+.service-card {
+    
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+.service-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 0.75rem 1.5rem rgba(0,0,0,0.3);
+}
+.service-icon {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+.text-light-50 {
+    color: rgba(255,255,255,0.7);
+}
+
+#ServicesBlock1 .card {
+    opacity: 0.7; 
+    transition: opacity 0.3s ease, transform 0.3s ease; 
+}
+
+#ServicesBlock1 .card:hover {
+    opacity: 1; 
+    transform: translateY(-10px); 
+}
+
+#mainNav2 {
+    background-color: transparent;
+    transition: all 0.4s ease;
+    padding: 1.5rem 1rem;
+    z-index: 9999;
+}
+
+#mainNav2.shrink {
+    background-color: rgb(10,10,15);
+    padding: 0.75rem 1rem;
+}
+
+#mainNav2 .nav-link {
+    position: relative;
+    color: #fff;
+    margin: 0 0.5rem;
+    transition: color 0.3s ease;
+}
+
+#mainNav2 .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    bottom: -4px;
+    width: 0;
+    height: 2px;
+    background-color: #0d6efd; 
+    border-radius: 2px;
+    transition: all 0.4s ease;
+    transform: translateX(-50%);
+}
+
+#mainNav2 .nav-link.active::after,
+#mainNav2 .nav-link:hover::after {
+    width: 100%;
+}
+
+/* Hover links */
+#mainNav2 .nav-link:hover {
+    color: #0d6efd;
+}
+
